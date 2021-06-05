@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
+
 *{
     box-sizing:border-box;
 }
@@ -20,7 +21,7 @@ body {
 .cntcnt{
     margin: 1 auto;
     display : flex;
-    padding-left: 500px;
+    padding-left: 200px;
     width: 60vw;
     height: 100px;
     overflow: hidden;
@@ -36,11 +37,12 @@ body {
 .speed,.accuracy,.error-rate,.last-char{
     width: 100px;
     padding: 10px;
-    margin-left: 5px;
-    border-bottom: 2px solid rgb(63, 180, 235);
+    margin-left: 30px;
+    border-bottom: 2px solid rgb(49, 207, 255);
     text-align: center;
-    font-size: 19px;
+    font-size: 29px;
     font-family: 'Nanum Pen Script', cursive;
+    color:rgba(16, 16, 16, 0.85);
 }
 .cnt{
     position: relative;
@@ -49,7 +51,7 @@ body {
     height: 100px;
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
-    color: rgba(65, 65, 65, 0.529);
+    color: rgba(65, 65, 65, 0.316);
     transition: transform 0.5s cubic-bezier(0.175, 0.785, 0.42, .879);
     /* background-color: deeppink; */
 }
