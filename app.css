@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+.bdy-cnt{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.cntcnt{
+    margin: 1 auto;
+    display : flex;
+    padding-left: 500px;
+    width: 60vw;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.stats{
+    margin : 1 auto;
+    display: flex;
+    padding: 20px;
+    /* background-color:yellow;     */
+}
+.speed,.accuracy,.error-rate,.last-char{
+    width: 100px;
+    padding: 10px;
+    margin-left: 5px;
+    border-bottom: 2px solid rgb(63, 180, 235);
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.cnt{
+    position: relative;
+    display : flex;
+    text-align: center;
+    height: 100px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    color: rgba(65, 65, 65, 0.529);
+    transition: transform 0.5s cubic-bezier(0.175, 0.785, 0.42, .879);
+    /* background-color: deeppink; */
+}
+.inwrd,.inerr{
+    width: 30px;
+    height: 60px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 4px;
+}
+.inwrd{
+    position: relative;
+    background-color: rgba(250, 235, 215, 0);
+}
+.inerr{
+    position: relative;
+    margin-right: 3px;
+    background: linear-gradient(to left,transparent,0%,rgba(250, 69, 69, 0.123) );
+    color: tomato;
+}
+.active{
+    color: black;
+}
+.active::after{
+    position: absolute;
+    margin:auto;
+    right: 11px;
+    bottom:0px;
+    content:"";
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid rgba(36, 160, 255, 0.823);
+    animation: pulse 1.2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(initial);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(initial);
+    }
+}
