@@ -1,5 +1,5 @@
 
-let word = 'Here you can se.'.toLocaleLowerCase();
+let word = 'Online communities are now a normal part of our everyday lives. The inernet has not only changed the way we form communities, but the tools we use to communicate, too. People around the world use social media sites to keep in touch with family and meet new people, or connect with friends using online games on their phones or computers.'.toLocaleLowerCase();
 class stringWorkspace {
     constructor(words) {
         this.words = words.split('');
@@ -46,11 +46,11 @@ class stringWorkspace {
             this.displaylastchar(el.key)
             }
         }
-
     displaylastchar(char){
         document.querySelector('.last-char').innerText = char;
     }
     grossWpm() {
+        
         this.gwpm = Math.floor((this.typedEntries / 4) / (this.secs / 60));
         document.querySelector('.speed').innerText = `${this.gwpm}wpm`;
     }
